@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var modal = document.querySelector('.modal')
   var close = document.querySelector('.close')
   var submit = document.querySelector('.submit')
-  var input = document.querySelectorAll('input')
+  var inputs = document.querySelectorAll('input')
 
   signIn.addEventListener('click', function() {
     modal.style.display = 'inline';
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   })
 
   submit.addEventListener('click', function() {
-    submit.style.display =
+    inputs[0].classList.add('error');
+    inputs[1].classList.add('error');
   })
 });
