@@ -18,4 +18,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
     inputs[0].classList.add('error');
     inputs[1].classList.add('error');
   })
+    inputs[0].addEventListener('click', function() {
+      this.className = null;
+    })
+    inputs[1].addEventListener('click', function() {
+      this.className = null;
+    })
 });
